@@ -157,7 +157,7 @@ p {
 }
 
 .intro-wrapper {
-    background-color: secon;
+    background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -177,8 +177,8 @@ p {
 #profile_pic {
     display: block;
     margin: 0 auto;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
     border: 2px solid var(--borderColor);
 }
@@ -385,10 +385,7 @@ footer {
     text-align: center;
 }
 
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
     .header a {
         float: relative;
         display: table-cell;
@@ -399,7 +396,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .main-container {
         width: 95%;
     }
