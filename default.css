@@ -237,8 +237,8 @@ p {
 
 #preview-shadow {
     background-color: var(--previewShadow);
-    max-width: 500px;
-    height: 320px;
+    max-width: 300px;
+    height: 220px;
     padding-left: 50px;
     padding-top: 50px;
 }
