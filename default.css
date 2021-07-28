@@ -145,7 +145,7 @@ p {
 }
 
 .main-container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -157,12 +157,7 @@ p {
 }
 
 .intro-wrapper {
-    background-color: var(--secondaryColor);
-    border: 1px solid var(--borderColor);
-    border-radius: 5px 5px 0 0;
-    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'left-column right-column';
@@ -282,7 +277,7 @@ p {
 
 .about-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: 1fr 1fr;
     padding-bottom: 50px;
     padding-top: 50px;
     gap: 100px;
@@ -294,11 +289,6 @@ p {
     background-color: var(--previewShadow);
 }
 
-.social-links {
-    display: grid;
-    align-content: center;
-    text-align: center;
-}
 
 .post-wrapper {
     display: grid;
@@ -336,6 +326,32 @@ p {
 .post-intro {
     color: #4b5156;
     font-size: 14px;
+}
+
+a:hover i{
+    transform: scale(0.85);
+}
+a:hover {
+    transform: scale(0.85);
+}
+
+
+.form-social{
+    display: grid;
+    grid-template-columns: repeat(auto-fit 1fr);
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px ;
+    padding-bottom: 10px ;
+    gap: 70px;
 }
 
 #contact-form {
